@@ -1,0 +1,12 @@
+/* nav {
+    z-index: 10
+}
+
+nav.scrolled {
+    @apply shadow-2xl;
+    border-bottom: 0px;
+} */
+
+img {
+    border-radius: 50%;
+}
