@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
+    < <link rel="stylesheet" href="css/style.css">>
 
-    <!-- W3hubs.com - Download Free Responsive Website Layout Templates designed on HTML5 CSS3,Bootstrap,Tailwind CSS which are 100% Mobile friendly. w3Hubs all Layouts are responsive cross browser supported, best quality world class designs. -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <!-- W3hubs.com - Download Free Responsive Website Layout Templates designed on HTML5 CSS3,Bootstrap,Tailwind CSS which are 100% Mobile friendly. w3Hubs all Layouts are responsive cross browser supported, best quality world class designs. -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 
 
-    <style type="text/tailwindcss">
-        @layer utilities { .content-auto { content-visibility: auto; } }
-    </style>
+        <style type="text/tailwindcss">
+            @layer utilities { .content-auto { content-visibility: auto; } }
+        </style>
 
 
 </head>
@@ -23,7 +23,7 @@
 <body bgcolor="#1c1917">
 
 
-    <nav class="flex items-center justify-between flex-wrap bg-dark-500  p-6">
+    <nav class="flex items-center justify-between flex-wrap   p-6">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
             <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
       <!-- <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/> -->
@@ -49,7 +49,7 @@
                 <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 font-mono text-teal-100 hover:text-yellow-600 mr-4 text-lg">
       EDUCATION
       </a>
-                <a href="#responsive-header" class="block mt-4 lg:inline-block font-mono lg:mt-0 text-teal-100 hover:text-yellow-600 text-lg">
+                <a href="contact.html" class="block mt-4 lg:inline-block font-mono lg:mt-0 text-teal-100 hover:text-yellow-600 text-lg">
       CONTACT
       </a>
                 <!-- <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0 ml-3">Login/Register</a> -->
@@ -79,87 +79,61 @@
                         </span>
                       </button>
 
+
+
                 </div>
 
             </div>
 
+            <!-- <div class="flex flex-wrap mt-12">
+                <div class="w-full md:w-2/6">
+                    <div class="chat-popup" id="myForm">
+                        <form action="/action_page.php" class="form-container">
+                            <h1>Chat</h1>
+
+                            <label for="msg"><b>Message</b></label>
+                            <textarea placeholder="Type message.." name="msg" required></textarea>
+
+                            <button type="submit" class="btn">Send</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </div> -->
         </div>
         <div class="w-full p-6 md:w-3/6 ">
-            <img src="images/myprofilepic.jpg" alt="Avatar" style="width: 400px; height: 400px; border-radius: 50%;">
+            <img src="images/myprofilepic.jpg" alt="Avatar" style="width: 400px; height: 400px; border-color: darkgoldenrod; border-radius: 50%;;">
+
         </div>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </body>
 
 </html>
 <script>
-    $(document).ready(function() {
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
 
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+</script>
+<script>
+    $(document).ready(function() {
         var $window = $(window);
 
         function checkWindowWidth() {
-
             var windowsize = $window.width();
-
             if (windowsize > 1000) {
-
                 $('#navbar').css('display', 'block');
-
             } else {
-
                 $('#navbar').css('display', 'none');
-
             }
         }
-
         checkWindowWidth();
-
         $(window).resize(checkWindowWidth);
-
     });
-
-
     $('#navbar-btn').click(function() {
         $('#navbar').toggle();
     });
