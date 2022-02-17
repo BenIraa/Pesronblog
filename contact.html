@@ -31,56 +31,112 @@
 
 </head>
 
-<body bgcolor="#1c1917">
+<body>
 
 
-    <nav class="flex items-center justify-between flex-wrap bg-dark-500 p-6 ">
-        <div class="flex items-center flex-shrink-0 text-white mr-6 ">
-            <svg class="fill-current h-8 w-8 mr-2 " width="54 " height="54 " viewBox="0 0 54 54 " xmlns="http://www.w3.org/2000/svg ">
-      <!-- <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55
-        9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z "/> -->
-    </svg>
-            <span class="font-semibold text-xl font-mono text-yellow-600 tracking-tight ">Ben Iraa</span>
-        </div>
-        <div class="block lg:hidden ">
-            <button class="flex items-center px-3 py-2 border rounded text-teal-100 border-teal-400 hover:text-white hover:border-white " id="navbar-btn ">
-      <svg class="fill-current h-3 w-3 " viewBox="0 0 20 20 " xmlns="http://www.w3.org/2000/svg ">
-        <title>Menu</title>
-        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z "/>
-      </svg>
-    </button>
-        </div>
-        <div class="w-full block flex-grow lg:flex pr-32 lg:items-center lg:w-auto " id="navbar ">
-            <div class="text-sm lg:flex-grow text-center lg:text-right ">
-                <a href="index.html " class="block mt-4 lg:inline-block lg:mt-0 font-mono text-teal-100 hover:text-yellow-600 mr-4 text-lg ">
-      HOME
-      </a>
-                <a href="about.html " class="block mt-4 lg:inline-block lg:mt-0 font-mono text-teal-100 hover:text-yellow-600 mr-4 text-lg ">
-      ABOUT
-      </a>
-                <a href="#responsive-header " class="block mt-4 lg:inline-block lg:mt-0 font-mono text-teal-100 hover:text-yellow-600 mr-4 text-lg ">
-      EDUCATION
-      </a>
-                <a href="contact.html" class="block mt-4 lg:inline-block font-mono lg:mt-0 text-teal-100 hover:text-yellow-600 text-lg ">
-      CONTACT
-      </a>
-                <!-- <a href="# " class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0 ml-3 ">Login/Register</a> -->
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                BenIraa
             </div>
         </div>
-    </nav>
-    <!-- Leave us a message -->
-    <div class=" flex flex-shrink-0 mt-2 ">
-        <div class="flex w-full md:w-3/6 m-2"></div>
-        <div class="flex w-full md:w-3/6 m-2">
-            <span class="text-sm text-yellow-600 text-center font-mono">Leave Us A  Message</span>
+        <div class="nav-btn">
+            <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="education.html">EDUCATION</a>
+            <a href="contact.html">CONTACT</a>
+
         </div>
     </div>
-    <!-- end -->
     <!-- Leave us a message -->
-    <div class=" flex flex-shrink-0 mt-2 ">
-        <div class="flex w-full md:w-3/6 m-2"></div>
-        <div class="flex w-full md:w-3/6 m-2">
-            <span class="text-xl text-center text-white  font-mono">CONTACT ME</span>
+
+
+    <div class="container">
+        <div class="innerwrap">
+
+            <section class="section1 clearfix">
+                <div class="textcenter">
+                    <span class="shtext">Contact Us</span>
+                    <span class="seperator"></span>
+                    <h1>Drop Us a Mail</h1>
+                </div>
+            </section>
+
+            <section class="section2 clearfix">
+                <div class="col2 column1 first">
+                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                    <div class="sec2map" style='overflow:hidden;height:550px;width:100%;'>
+                        <div id='gmap_canvas' style='height:100%;width:100%;'></div>
+                        <div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div>
+                        <div><small><a href="http://freedirectorysubmissionsites.com/">free web directories</a></small></div>
+                        <style>
+                            #gmap_canvas img {
+                                max-width: none!important;
+                                background: none!important
+                            }
+                        </style>
+                    </div>
+                    <script type='text/javascript'>
+                        function init_map() {
+                            var myOptions = {
+                                zoom: 14,
+                                center: new google.maps.LatLng(19.075314480255834, 72.88153973865361),
+                                mapTypeId: google.maps.MapTypeId.ROADMAP
+                            };
+                            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                            marker = new google.maps.Marker({
+                                map: map,
+                                position: new google.maps.LatLng(19.075314480255834, 72.88153973865361)
+                            });
+                            infowindow = new google.maps.InfoWindow({
+                                content: '<strong>My Location</strong><br>mumbai<br>'
+                            });
+                            google.maps.event.addListener(marker, 'click', function() {
+                                infowindow.open(map, marker);
+                            });
+                            infowindow.open(map, marker);
+                        }
+                        google.maps.event.addDomListener(window, 'load', init_map);
+                    </script>
+                </div>
+                <div class="col2 column2 last">
+                    <div class="sec2innercont">
+                        <div class="sec2addr">
+                            <p>45 BC, a Latin professor at Hampden-Sydney College in Business Info Tec</p>
+                            <p><span class="collig">Phone :</span> +250 781019415</p>
+                            <p><span class="collig">Email :</span> beniraa50@gmail.com</p>
+                            <p><span class="collig">Fax :</span> +250 71019415</p>
+                        </div>
+                    </div>
+                    <div class="sec2contactform">
+                        <h3 class="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
+                        <form action="">
+                            <div class="clearfix">
+                                <input class="col2 first" type="text" placeholder="FirstName">
+                                <input class="col2 last" type="text" placeholder="LastName">
+                            </div>
+                            <div class="clearfix">
+                                <input class="col2 first" type="Email" placeholder="Email">
+                                <input class="col2 last" type="text" placeholder="Contact Number">
+                            </div>
+                            <div class="clearfix">
+                                <textarea name="textarea" id="" cols="30" rows="7">Your message here...</textarea>
+                            </div>
+                            <div class="clearfix"><input type="submit" value="Send"></div>
+                        </form>
+                    </div>
+
+                </div>
+            </section>
+
         </div>
     </div>
-    <!-- end -->
