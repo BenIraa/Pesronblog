@@ -38,7 +38,7 @@
         <input type="checkbox" id="nav-check">
         <div class="nav-header">
             <div class="nav-title">
-                BenIraa
+                <img src="images/Ben iraa without bg.png">
             </div>
         </div>
         <div class="nav-btn">
@@ -111,28 +111,32 @@
                 <div class="col2 column2 last">
                     <div class="sec2innercont">
                         <div class="sec2addr">
-                            <p>45 BC, a Latin professor at Hampden-Sydney College in Business Info Tec</p>
+                            <p>Benjamin IRADUKUNDA </p>
                             <p><span class="collig">Phone :</span> +250 781019415</p>
                             <p><span class="collig">Email :</span> beniraa50@gmail.com</p>
-                            <p><span class="collig">Fax :</span> +250 71019415</p>
+                            <p><span class="collig">Whatsapp :</span> +250 71019415</p>
                         </div>
                     </div>
                     <div class="sec2contactform">
                         <h3 class="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
-                        <form action="">
+                        
+                        <!-- Form contact Page -->
+                        <form class="add">
                             <div class="clearfix">
-                                <input class="col2 first" type="text" placeholder="FirstName">
-                                <input class="col2 last" type="text" placeholder="LastName">
+                                <input class="col2 first" type="text" name="firstname" placeholder="FirstName">
+                                <input class="col2 last" type="text" name="lastname" placeholder="LastName">
                             </div>
                             <div class="clearfix">
-                                <input class="col2 first" type="Email" placeholder="Email">
-                                <input class="col2 last" type="text" placeholder="Contact Number">
+                                <input class="col2 first" type="email" name="email" placeholder="Email">
+                                <input class="col2 last" type="text" name="phone" placeholder="Contact Number">
                             </div>
                             <div class="clearfix">
-                                <textarea name="textarea" id="" cols="30" rows="7">Your message here...</textarea>
+                                <textarea type="textarea" name="message" id="" cols="30" rows="7"></textarea>
                             </div>
-                            <div class="clearfix"><input type="submit" value="Send"></div>
+                            <button style="margin-top: 6px; padding: 7px;">Send </button>
                         </form>
+
+                        <!-- End of form -->
                     </div>
 
                 </div>
@@ -140,6 +144,7 @@
 
         </div>
     </div>
+    <script src="bundle.js"></script>
 </body>
 
 </html>
