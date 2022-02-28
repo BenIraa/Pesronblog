@@ -22,12 +22,27 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+     
     <style type="text/tailwindcss">
         @layer utilities { .content-auto { content-visibility: auto; } }
     </style>
+    <style>
+        .card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
 
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+    </style>
 
 </head>
 
@@ -59,35 +74,19 @@
         </div>
     </div>
 
+    <!-- Projects -->
+
     <section class="section1 clearfix">
         <div class="textcenter">
-            <span class="shtext text-yellow-600">+2 Years Of Experience</span>
+            <span class="shtext text-yellow-600">The Project I have Done!</span>
             <span class="seperator"></span>
-            <h4 class=""><b>EDUCATION & EXPERIENCE</b></h4>
-            <h6 class="mt-2 p-2">Laoreet elementum Sed congue nisl dolorSed congue nisl dolor, id dapibus leo elementum posuere. Ut aliquam metus quis.</h6>
-            <h4 class=""><b>You Can See My Education</b></h4>
+
+
         </div>
     </section>
-    <div class="timeline">
-        <div class="container-timeline left">
-            <div class="content">
-                <i class="fa fa-graduation-cap" style="font-size: 60px; color: darkgoldenrod;"></i>
-                <h2 class="text-white">2021-2024</h2>
-                <p class="text-white">University Of Rwanda<br>
-                    <h6 class="text-white"> Department Of BIT</h6>
-                </p>
-            </div>
-        </div>
-        <div class="container-timeline right">
-            <div class="content">
-                <i class="fa fa-graduation-cap" style="font-size: 60px; color: darkgoldenrod;"></i>
-                <h2 class="text-white">2017-2019</h2>
-                <p class="text-white">High School<br>
-                    <h6 class="text-white">Software Development</h6>
-                </p>
-            </div>
-        </div>
-    </div>
-</body>
 
-</html>
+    
+
+
+    </body>
+    </html>

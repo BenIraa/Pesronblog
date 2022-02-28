@@ -110,10 +110,10 @@ span.psw {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #e0dfdf;
   margin: 5% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
+  width: 70%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button (x) */
@@ -180,12 +180,13 @@ span.psw {
         </div>
 
         <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="education.html">Education</a>
-            <a href="contact.html">Contact</a>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="education.html">Education</a>
+          <a href="contact.html">Contact</a>
 
-        </div>
+      </div>
     </div>
 
     <div class="index-container ">
@@ -196,9 +197,9 @@ span.psw {
                 <p class=" mt-4  p-6 font-mono">I'm  expert web design and Web development, I'm a Front End Developer. I have a Passion for Creating Clean, Beautiful, Interactive, Minimalistic, Responsive and User Friendly UI, Developed by Modular, Scalable and Functional Code.</p>
                 <div class="flex flex-wrap mt-6 mr-6 p-6">
                     <div class="w-full md:w-3/6">
-                        <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:ring-pink-200 dark:focus:ring-pink-800">
+                      <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:ring-pink-200 dark:focus:ring-pink-800">
                         <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                            Hire Me
+                             HireMe
                         </span>
                       </button>
 
@@ -231,28 +232,58 @@ span.psw {
 
 <div id="id01" class="modal">
   
-  <form class="Login modal-content animate">
+  <div class="modal-content animate">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="images/admin.jpg" alt="Avatar" class="center">
+      <!-- <img src="images/admin.jpg" alt="Avatar" class="center"> -->
     </div>
 
     <div class="container-modal">
-      <label for="uname"><b>Email</b></label>
-      <input type="email" placeholder="Example@gmail.com" name="email" required>
-
+      <form class="Login">
+      <label for="email"><b>Email</b></label>
+      <input type="password" placeholder="Enter Email" name="password" required>
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="password" required>
         
       <button type="submit" style="padding: 4px; background-color: #04AA6D; width: 100px;">Login</button>
+    </form>
     </div>
 
     <div class="container-modal" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
       
     </div>
-  </form>
+  </div>
 </div>
+
+<div id="id02" class="modal">
+  
+  <div class="modal-content animate">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container-modal">
+      <form>
+        <div class="form-group">
+          <label for="recipient-name" class="col-form-label">Recipient:</label>
+          <input type="text" class="form-control" id="recipient-name">
+        </div>
+        <div class="form-group">
+          <label for="message-text" class="col-form-label">Message:</label>
+          <textarea class="form-control" id="message-text"></textarea>
+        </div>
+        <button type="submit" style="padding: 4px; background-color: #04AA6D; width: 100px;">Hire</button>
+      </form>
+    </div>
+
+    <div class="container-modal" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      
+    </div>
+  </div>
+</div>
+
 
 <script src="bundle.js"></script>
 
@@ -268,25 +299,7 @@ span.psw {
         document.getElementById("myForm").style.display = "none";
     }
 </script>
-<script>
-    $(document).ready(function() {
-        var $window = $(window);
 
-        function checkWindowWidth() {
-            var windowsize = $window.width();
-            if (windowsize > 1000) {
-                $('#navbar').css('display', 'block');
-            } else {
-                $('#navbar').css('display', 'none');
-            }
-        }
-        checkWindowWidth();
-        $(window).resize(checkWindowWidth);
-    });
-    $('#navbar-btn').click(function() {
-        $('#navbar').toggle();
-    });
-</script>
 
 <!-- SCRIPT FOR LOGIN MODAL -->
 <script>
@@ -300,3 +313,15 @@ span.psw {
         }
     }
     </script>
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('id02');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
