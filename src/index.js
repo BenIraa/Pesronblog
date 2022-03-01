@@ -55,9 +55,11 @@ const firebaseConfig = {
       })
       .then(() => {
           addContactForm.reset() // Add new doc and stay on the same page
+          alert("Data sent succesfully!")
       })
 
   })
+  
 
   const LoginForm = document.querySelector('.Login')
   LoginForm.addEventListener('submit', (e) =>{
@@ -89,7 +91,7 @@ const firebaseConfig = {
 
   })
 
-//   signing Users Up
+//   Adding User!
 
 const SignUpForm = document.querySelector('.SignUp')
 SignUpForm.addEventListener('submit', (e) => {

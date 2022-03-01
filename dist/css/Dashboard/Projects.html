@@ -81,37 +81,55 @@
                     <p class="font-mono">Welcome BenIraa, Here! View Your Dashboard Impresion Insight And Some Mesages!</p>
                 </div>
                 <div class="row">
-                    <div class="col-sm-3">
+                    <div class="col-sm-12">
                         <div class="well">
-                            <i class="fa fa-line-chart " aria-hidden="true" style="font-size:40px;color:#bbb80f;padding-left: 70px;"></i>
-                            <p class="font-momo " style=" margin-top: 6px;"></p>
+                            <form class="AddProject">
+                                <label for="title">Title:</label>
+                                <input type="text" name="title">
+                                <label for="Discription">Discription:</label>
+                                <input type="text" name="Discription">
+                                <label for="Picture">Picture:</label>
+                                <input type="file" name="picture" id="">
+
+                                <button style="margin-top: 6px; padding: 7px;">add a new Project</button>
+                            </form> 
+                        </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="well">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Project ID</th>
+                                        <th>Title</th>
+                                        <th>Discription</th>
+                                        <th>Picture</th>
+                                        
+                                        
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="Project ID"></td>
+                                        <td data-label="Title"></td>
+                                        <td data-label="Discription"></td>
+                                        <td data-label="Picture"></td>
+                                       
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    <div class="col-sm-3">
-                        <div class="well">
-                            <i class="fa fa-eye " aria-hidden="true" style="font-size:40px;color:#bbb80f;padding-left: 70px;"></i>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="well">
-                            <i class="fa fa-line-chart " aria-hidden="true" style="font-size:40px;color:#bbb80f;padding-left: 70px;"></i>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="well">
-                            <i class="fa fa-envelope-o " aria-hidden="true" style="font-size:40px;color:#bbb80f;padding-left: 70px;"></i>
-                            <p></p>
-                        </div>
-                    </div>
+
                 </div>
                 
                 
             </div>
         </div>
     </div>
-
+<script src="../../bundle.js"></script>
 </body>
 
 </html>

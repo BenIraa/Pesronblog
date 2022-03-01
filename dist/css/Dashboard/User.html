@@ -13,6 +13,67 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <style>
+        /* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+
+  background-color: darkgoldenrod;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 75%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+/* Center the avatar image inside this container */
+
+
+/* Avatar image */
+
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
         /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
         
         .row.content {
@@ -66,7 +127,7 @@
                 <ul class="nav nav-pills nav-stacked">
                     <li><a href="index.html">Dashboard</a></li>
                     <li><a href="User.html">User</a></li>
-                    <li><a href="Hireme.html">Hired Person</a></li>
+                    <li><a href="Hireme">Hired Person</a></li>
                     <li><a href="Projects.html">Projects</a></li>
                     <li><a href="aboutpage.html">About Page</a></li>
                     <li><a href="educationpage.html">Education Page</a></li>
@@ -80,38 +141,71 @@
                     <h4 class="Font-mono">Dashboard Overview</h4>
                     <p class="font-mono">Welcome BenIraa, Here! View Your Dashboard Impresion Insight And Some Mesages!</p>
                 </div>
+                
+               <div class="row">
+                   <div class="col-sm-12">
+                       <div class="well">
+
+                        <form class="SignUp">
+                            <div class="imgcontainer">
+                              
+                            </div>
+                          
+                            <div class="container">
+                              <label for="uname"><b>Email</b></label>
+                              <input type="text" placeholder="Enter Email" name="email" required>
+                          
+                              <label for="psw"><b>Password</b></label>
+                              <input type="password" placeholder="Enter Password" name="password" required>
+                          
+                              <button type="submit">Add User</button>
+                             
+                            </div>
+                          
+                            
+                          </form>
+                       </div>
+                   </div>
+                   
+               </div>
                 <div class="row">
-                    <div class="col-sm-3">
+                    <div class="col-sm-12">
                         <div class="well">
-                            <i class="fa fa-line-chart " aria-hidden="true" style="font-size:40px;color:#bbb80f;padding-left: 70px;"></i>
-                            <p class="font-momo " style=" margin-top: 6px;"></p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th> ID</th>
+                                        <th>Email</th>
+                                        <th>Date</th>
+                                        <th>Role</th>
+                                        <th>Update</th>
+
+                                        
+                                        
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="ID"></td>
+                                        <td data-label="Email"></td>
+                                        <td data-label="Date"></td>
+                                        <td data-label="Role"></td>
+                                        <td data-label="Update"></td>
+                                        
+                                        
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    <div class="col-sm-3">
-                        <div class="well">
-                            <i class="fa fa-eye " aria-hidden="true" style="font-size:40px;color:#bbb80f;padding-left: 70px;"></i>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="well">
-                            <i class="fa fa-line-chart " aria-hidden="true" style="font-size:40px;color:#bbb80f;padding-left: 70px;"></i>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="well">
-                            <i class="fa fa-envelope-o " aria-hidden="true" style="font-size:40px;color:#bbb80f;padding-left: 70px;"></i>
-                            <p></p>
-                        </div>
-                    </div>
+
                 </div>
-                
-                
             </div>
         </div>
     </div>
-
+    <script src="../../bundle.js"></script>
 </body>
 
 </html>
